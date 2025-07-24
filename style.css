@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 4982px;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+:root {
+  --primary-color: #0071e3;
+  --light: #fff;
+}
+
+/* Naviagtion */
+.HeaderMenu {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+  background: rgba(245, 245, 247, 0.8);
+  position: fixed;
+}
+
+.HeaderMenu p {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px; /* 500% */
+  letter-spacing: -0.28px;
+}
+
+/* Describtion */
+.Describtion {
+  display: flex;
+  padding: 16px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding-top: 55px;
+  font-family: Inter;
+}
+
+/* Background */
+.Background {
+  background: url(./images/Background-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 692px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.Background-2 {
+  background: url(./images/Background-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 692px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.Background-3 {
+  background: url(./images/Background-3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 692px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.Background-title {
+  display: flex;
+  width: 405px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 55px;
+}
+
+.Background-title h2 {
+  color: #f5f5f7;
+  text-align: center;
+  font-family: Inter;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 115.385% */
+  letter-spacing: -0.28px;
+  margin-bottom: -5px;
+}
+
+.Background-title p {
+  color: #f5f5f7;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+}
+
+.Background-3 .dark {
+  margin-bottom: 82px;
+}
+
+.Background-3 .dark h2 {
+  color: #000;
+}
+.Background-3 .dark p {
+  color: #000;
+}
+
+/* Button */
+.btn-container {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-container-2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 22.5em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: var(--primary-color);
+  border-radius: 999px;
+  color: #fff;
+  text-decoration: none;
+  font-family: Inter;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 20px;
+  background: var(--primary-color);
+  border-radius: 999px;
+  color: #fff;
+  text-decoration: none;
+  font-family: Inter;
+}
+
+.btn.btn-light {
+  display: inline-block;
+  padding: 12px 20px;
+  background: var(--light);
+  border-radius: 999px;
+  color: #000;
+  text-decoration: none;
+  font-family: Inter;
+}
+
+.btn.btn-colorless {
+  background: none;
+  border: 1px solid #2997ff;
+  color: var(--primary-color);
+}
+
+.btn.btn-colorless-light {
+  background: none;
+  border: 1px solid #fff;
+  color: var(--light);
+}
+
+/* Product Cardbox */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 580px;
+  /* background-color: lightblue; */
+  flex-shrink: 0;
+  gap: 12px;
+
+  padding: 10px;
+}
+
+.griditem-1 {
+  background: url(./images/product-img-1.png);
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.griditem-2 {
+  background: url(./images/product-img-2.png);
+  background-size: contain;
+}
+.griditem-3 {
+  background: url(./images/product-img-3.png);
+  background-size: contain;
+}
+.griditem-4 {
+  background: url(./images/product-img-4.png);
+  background-size: contain;
+}
+.griditem-5 {
+  background: url(./images/product-img-5.png);
+  background-size: contain;
+}
+.griditem-6 {
+  background: url(./images/product-img-6.png);
+  background-size: contain;
+}
+
+.griditem-1 img {
+  width: 430px;
+  height: 33px;
+  flex-shrink: 0;
+  margin-top: 58px;
+  margin-bottom: 9px;
+}
+
+.griditem-1 p {
+  color: #1d1d1f;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+  margin-bottom: 20px;
+}
+
+#product1-unique-text {
+  background: linear-gradient(
+    90deg,
+    #0090f7 0%,
+    #ba62fc 33.33%,
+    #f2416b 66.67%,
+    #f55600 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 17.8em;
+  margin-left: 17.8px;
+}
+
+.griditem-2 h3 {
+  color: #f5f5f7;
+  text-align: center;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px; /* 122.222% */
+  margin-top: 11em;
+  margin-bottom: 2px;
+}
+
+.griditem-2 p {
+  color: #f5f5f7;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+  margin-bottom: 10px;
+}
+
+.product-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.apple-logo-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: lightblue;
+}
+
+.apple-logo-wrapper img {
+  width: 100px;
+  height: 100px;
+}
+
+.apple-logo-wrapper p {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
